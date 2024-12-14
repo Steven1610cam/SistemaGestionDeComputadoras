@@ -56,9 +56,19 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         MenuUsuario.add(ItemCrearU);
 
         ItemEditarU.setText("Editar Usuario");
+        ItemEditarU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemEditarUActionPerformed(evt);
+            }
+        });
         MenuUsuario.add(ItemEditarU);
 
         ItemEliminarU.setText("Eliminar Usuario");
+        ItemEliminarU.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemEliminarUActionPerformed(evt);
+            }
+        });
         MenuUsuario.add(ItemEliminarU);
 
         jMenuBar1.add(MenuUsuario);
@@ -66,6 +76,11 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         BTNComputadora.setText("Computadora");
 
         ItemCrearC.setText("Crear Computadora");
+        ItemCrearC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ItemCrearCActionPerformed(evt);
+            }
+        });
         BTNComputadora.add(ItemCrearC);
 
         ItemEditarC.setText("Editar Computadora");
@@ -111,7 +126,8 @@ public class PaginaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void ItemCrearSOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemCrearSOActionPerformed
-        // TODO add your handling code here:
+        
+        
     }//GEN-LAST:event_ItemCrearSOActionPerformed
 
     private void ItemCrearUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemCrearUActionPerformed
@@ -120,6 +136,28 @@ public class PaginaPrincipal extends javax.swing.JFrame {
         ventana.setLocationRelativeTo(this);
         ventana.setVisible(true);
     }//GEN-LAST:event_ItemCrearUActionPerformed
+
+    private void ItemCrearCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemCrearCActionPerformed
+        
+        VentanaComputadoras ventana = new VentanaComputadoras(this, true);
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+        
+    }//GEN-LAST:event_ItemCrearCActionPerformed
+
+    private void ItemEditarUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemEditarUActionPerformed
+        
+        VentanaUsuarios ventana = new VentanaUsuarios(this, true);
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+    }//GEN-LAST:event_ItemEditarUActionPerformed
+
+    private void ItemEliminarUActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ItemEliminarUActionPerformed
+        
+        VentanaUsuarios ventana = new VentanaUsuarios(this, true);
+        ventana.setLocationRelativeTo(this);
+        ventana.setVisible(true);
+    }//GEN-LAST:event_ItemEliminarUActionPerformed
 
     
     public static void main(String args[]) {
