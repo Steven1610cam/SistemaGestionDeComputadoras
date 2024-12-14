@@ -41,7 +41,8 @@ public class VentanaComputadoras extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Gestion De Computadoras");
-        setBackground(new java.awt.Color(0, 92, 138));
+        setBackground(new java.awt.Color(18, 13, 53));
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Malgun Gothic", 1, 24)); // NOI18N
@@ -129,7 +130,7 @@ public class VentanaComputadoras extends javax.swing.JDialog {
                 BTNcancelarActionPerformed(evt);
             }
         });
-        getContentPane().add(BTNcancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(336, 410, -1, 36));
+        getContentPane().add(BTNcancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 10, -1, 36));
 
         BTNguardar.setFont(new java.awt.Font("Malgun Gothic", 1, 14)); // NOI18N
         BTNguardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Principal/Recursos/guardar-carpeta (1).png"))); // NOI18N

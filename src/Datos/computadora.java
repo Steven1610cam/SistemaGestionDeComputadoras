@@ -9,6 +9,4 @@ public class Computadora {
     public String procesador;
     public static HashMap<String,Computadora> computadoraBD;
     
-    
-    
 }
