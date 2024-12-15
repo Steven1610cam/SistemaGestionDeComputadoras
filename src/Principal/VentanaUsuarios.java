@@ -260,7 +260,8 @@ public class VentanaUsuarios extends javax.swing.JDialog {
         }
         //validar si el esuario ya esta guardado en el dicionario
         if(Usuario.usuarioBD.containsKey(nombre)){
-            String msj = "Ya Existe Un Usuario Con Este Nombre"+nombre;
+            String msj = "Ya Existe Un suarioBD.containsKey(nombre)){\n" +
+"            String msj = \"Ya Usuario Con Este Nombre"+nombre;
             JOptionPane.showMessageDialog(this, msj);
         }
         //aqui se guarda el usuario en el diccionario si no existe
@@ -369,7 +370,7 @@ public class VentanaUsuarios extends javax.swing.JDialog {
             else{
             String msj = "No existen Usuarios con nombre"+nombre;
             JOptionPane.showMessageDialog(this, msj);
-            limpiarCampos();
+           
             }
                 
         }
